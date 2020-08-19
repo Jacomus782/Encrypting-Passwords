@@ -25,16 +25,18 @@ for i in range(pas_len):
 Y = []
 for i in range(key_len):
     if Key[i] in Ualpha:
-        y = Ualpha.find(Key[i])
-        print(y)
-        Y += str(y)
+        Y.append(Ualpha.find(Key[i]))
+        print(Y)
+
     if Key[i] in Lalpha:
-        y = Lalpha.find(Key[i])
-        print(y)
-        Y += str(y)
+        Y.append(Lalpha.find(Key[i])+26)
+        print(Y)
+
     if Key[i] in num:
-        y = num.find(Key[i])
-        print(y)
-        Y += str(y)
+        Y.append(num.find(Key[i])+52)
+        print(Y)
+
 print(Y)
 
+diff =  X[0] - Y[0]
+print(diff)
