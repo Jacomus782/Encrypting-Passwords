@@ -49,9 +49,13 @@ Encrypt_pass = []
 for i in range(len(enc_pass)):
     if -1 < enc_pass[i] < 26:
         Encoded = Ualpha[enc_pass[i]]
+        Encrypt_pass.append(Encoded)
+
     if 25 < enc_pass[i] < 52:
         Encoded = Lalpha[enc_pass[i]-26]
+        Encrypt_pass.append(Encoded)
+
     if 52 < enc_pass[i] < 62:
         Encoded = num[enc_pass[i]-52]
-    Encrypt_pass.append((Encoded))
+        Encrypt_pass.append(Encoded)
 print(Encrypt_pass)
