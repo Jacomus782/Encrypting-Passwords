@@ -2,8 +2,8 @@ Ualpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Lalpha = "abcdefghijklmnopqrstuvwxyz"
 num = "0123456789"
 # 8Xfgk
-Password_enc = input('Type encrypted password here')
-Key = input('Type Key here')
+Password_enc = input('Type encrypted password here:  ')
+Key = input('Type Key here:   ')
 key_len = len(Key)
 pasenc_len = len(Password_enc)
 
@@ -31,7 +31,7 @@ for i in range(key_len):
     if Key[i] in num:
         Y.append(num.find(Key[i])+52)
 
-
+print(Y)
 
 dnc_pass = []
 for i in range(pasenc_len):
@@ -58,3 +58,9 @@ for i in range(len(dnc_pass)):
         decoded = num[dnc_pass[i]-52]
         decrypt_pass.append(decoded)
 print(decrypt_pass)
+
+DecPass = ''.join(decrypt_pass)
+print(DecPass)
+print('     ')
+
+input('press any Enter to end the program')

@@ -4,8 +4,8 @@ Ualpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Lalpha = "abcdefghijklmnopqrstuvwxyz"
 num = "0123456789"
 
-Password = input('Type password here')
-Key = input('Type Key here')
+Password = input('Type password here:   ')
+Key = input('Type Key here:   ')
 key_len = len(Key)
 pas_len = len(Password)
 
@@ -59,3 +59,9 @@ for i in range(len(enc_pass)):
         Encoded = num[enc_pass[i]-52]
         Encrypt_pass.append(Encoded)
 print(Encrypt_pass)
+
+EncPass = ''.join(Encrypt_pass)
+print(EncPass)
+print('     ')
+
+input('press any Enter to end the program')
