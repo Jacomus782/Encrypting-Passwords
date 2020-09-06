@@ -76,5 +76,3 @@ print(DecPass)
 print('     ')
 
 input('press any Enter to end the program')
-#Oj5(-WdrEI
-#HFUgyu3ugf3ybvyu
